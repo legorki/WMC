@@ -1,2 +1,9 @@
+# POS
+This repository contains all important files/projects of Webprogramming in 2023.
 
-# This is my Webprogramming repository. You will find HTML, JavaScript, CSS, Angular and more in here.
+Probably contains confusing branches and heaps of confusing HTML, JS, CSS and more. 
+
+If you do want to clone this (for whatever reason), heres the link:
+```
+git clone https://github.com/legorki/WMC
+```
