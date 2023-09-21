@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script type="text/javascript" src="calc.js"></script>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body onload="reset()">
+<h1>Calculator</h1>
+<table>
+    <tr><td colspan="4"><input type="text" id="resultField" /></td></tr>
+    <tr><td><input type="button" value="1"  onclick="setOperand(1)"></td>
+        <td><input type="button" value="2"  onclick="setOperand(2)"></td>
+        <td><input type="button" value="3"  onclick="setOperand(3)"></td>
+        <td><input type="button" value="+"  onclick="setOperator('+')"></td>
+    </tr>
+    <tr><td><input type="button" value="4"  onclick="setOperand(4)"></td>
+        <td><input type="button" value="5"  onclick="setOperand(5)"></td>
+        <td><input type="button" value="6"  onclick="setOperand(6)"></td>
+        <td><input type="button" value="-"  onclick="setOperator('-')"></td>
+    </tr>
+    <tr><td><input type="button" value="7"  onclick="setOperand(7)"></td>
+        <td><input type="button" value="8"  onclick="setOperand(8)"></td>
+        <td><input type="button" value="9"  onclick="setOperand(9)"></td>
+        <td><input type="button" value="*"  onclick="setOperator('*')"></td>
+    </tr>
+    <tr><td><input type="button" value="0"  onclick="setOperand(0)"></td>
+        <td><input type="button" value="C"  onclick="reset()"></td>
+        <td><input type="button" value="="  onclick="calc()"></td>
+        <td><input type="button" value=":"  onclick="setOperator(':')"></td>
+</table>
+</body>
+</html>
