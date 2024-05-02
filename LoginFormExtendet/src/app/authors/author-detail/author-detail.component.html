@@ -1,0 +1,25 @@
+<div class="detail-container">
+  <form>
+    <p>UUID: {{ author.uuid }}</p>
+    <input
+      type="text"
+      [(ngModel)]="author.firstname"
+      (change)="checkSaveBtn()"
+      placeholder="First name"
+      name="firstname"
+    />
+    <input
+      type="text"
+      [(ngModel)]="author.lastname"
+      (change)="checkSaveBtn()"
+      placeholder="Last name"
+      name="lastname"
+    />
+    <div class="buttons">
+      <button [disabled]="!btnStatus" (click)="saveAuthor()">Save</button>
+      <button (click)="deleteAuthor()">Delete</button>
+      <button (click)="createAuthor()">New</button>
+      <button (click)="clearAuthor()">Clear</button>
+    </div>
+  </form>
+</div>

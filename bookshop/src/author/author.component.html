@@ -1,0 +1,7 @@
+<mat-list>
+  <mat-list-item *ngFor="let author of authors">
+    {{ author.firstname }} {{ author.lastname }}
+  </mat-list-item>
+</mat-list>
+
+<app-author-detail [authorDetailForm]="authorDetailForm" (authorChanged)="onAuthorChanged($event)"></app-author-detail>

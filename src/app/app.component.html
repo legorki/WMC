@@ -1,0 +1,72 @@
+<h1>Bookshop V2</h1>
+<button
+  *ngIf="userService.isLoggedIn()"
+  mat-raised-button
+  color="primary"
+  (click)="userService.logoutUser()"
+>
+  Logout
+</button>
+<div *ngIf="!userService.isAdmin() && userService.isLoggedIn()">
+  <button
+    mat-raised-button
+    color="primary"
+    [routerLink]="['/shop/products']"
+    routerLinkActive="router-link-active"
+  >
+    Products</button
+  ><button
+    mat-raised-button
+    color="primary"
+    [routerLink]="['/shop/cart']"
+    routerLinkActive="router-link-active"
+  >
+    Cart</button
+  ><button
+    mat-raised-button
+    color="primary"
+    [routerLink]="['/shop/checkout']"
+    routerLinkActive="router-link-active"
+  >
+    Checkout</button
+  ><button
+    mat-raised-button
+    color="primary"
+    [routerLink]="['/shop/account']"
+    routerLinkActive="router-link-active"
+  >
+    Account</button
+  ><button
+    mat-raised-button
+    color="primary"
+    [routerLink]="['/shop/about']"
+    routerLinkActive="router-link-active"
+  >
+    About
+  </button>
+</div>
+<div *ngIf="userService.isAdmin() && userService.isLoggedIn()">
+  <button
+    mat-raised-button
+    color="primary"
+    [routerLink]="['/admin/authors']"
+    routerLinkActive="router-link-active"
+  >
+    Authors</button
+  ><button
+    mat-raised-button
+    color="primary"
+    [routerLink]="['/admin/books']"
+    routerLinkActive="router-link-active"
+  >
+    Books</button
+  ><button
+    mat-raised-button
+    color="primary"
+    [routerLink]="['/admin/orders']"
+    routerLinkActive="router-link-active"
+  >
+    Orders
+  </button>
+</div>
+<router-outlet></router-outlet>

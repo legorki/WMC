@@ -1,0 +1,11 @@
+
+<div *ngFor="let author of authors" (click)="authorClickEvent(author)" class="author-container">
+  <h3>{{ author.firstname }} {{ author.lastname}}</h3>
+  <p>{{ author.uuid }}</p>
+</div>
+
+<footer>
+  <app-messages></app-messages>
+</footer>
+
+<app-author-detail [author]="selectedAuthor" class="author-detail-container"></app-author-detail>

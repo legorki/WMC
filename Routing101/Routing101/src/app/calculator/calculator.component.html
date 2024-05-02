@@ -1,0 +1,29 @@
+<input type="number" [(ngModel)]="calc.t1">
+<input type="number" [(ngModel)]="calc.t2">
+
+<select name="operations" id="operations" [(ngModel)]="calc.selectedOperation">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="/">/</option>
+  <option value="*">*</option>
+</select>
+
+<span *ngIf="calc.selectedOperation === '+'">{{ calc.plus() }}</span>
+<span *ngIf="calc.selectedOperation === '-'">{{ calc.minus() }}</span>
+<span *ngIf="calc.selectedOperation === '*'">{{ calc.mult() }}</span>
+<span *ngIf="calc.selectedOperation === '/'">{{ calc.div() }}</span>
+
+<style>
+
+  input{
+    font-size: 30px;
+  }
+
+  option{
+    font-size:20px;
+  }
+  span {
+    margin-left: 20px;
+    font-size: 30px;
+  }
+</style>

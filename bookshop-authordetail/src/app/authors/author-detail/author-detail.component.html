@@ -1,0 +1,13 @@
+
+<div class="form" style="margin-left: 75%; margin-top: -10%">
+  <h2>{{author.firstname}} {{author.lastname}}</h2>
+  <p>{{author.uuid}}</p>
+  <input [(ngModel)]="author.firstname">
+  <input [(ngModel)]="author.lastname">
+  <div class="buttons">
+    <button (click)="saveAuthor()">Save</button>
+    <button (click)="cancel()">Cancel</button>
+    <button (click)="deleteAuthor()">Delete</button>
+    <button (click)="newAuthor()">New</button>
+  </div>
+</div>

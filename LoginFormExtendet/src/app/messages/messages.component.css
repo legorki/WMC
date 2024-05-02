@@ -1,0 +1,40 @@
+.message-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.message-list {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.message-list h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.message-list button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.message-list button:hover {
+  background-color: #0056b3;
+}
+
+.message-list div {
+  margin-bottom: 10px;
+}
+
+.message-list p {
+  margin: 0;
+}

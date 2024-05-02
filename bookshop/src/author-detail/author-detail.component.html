@@ -1,0 +1,22 @@
+<h1>
+  Author Detail
+</h1>
+<h2>{{ authorDetailForm.value.firstname }} {{ authorDetailForm.value.lastname }}</h2>
+<p>{{ authorDetailForm.value.id }}</p>
+<form [formGroup]="authorDetailForm" (ngSubmit)="onSave()">
+
+  <mat-form-field>
+    <input matInput type="text" id="fn" formControlName="firstname" placeholder="Firstname">
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field>
+    <input matInput type="text" id="ln" formControlName="lastname" placeholder="Lastname" required>
+  </mat-form-field>
+
+  <button color="warn" type="submit" [disabled]="!authorDetailForm.valid">Save</button>
+  <button color="warn" type="button" (click)="onCancel()">Cancel</button>
+  <button color="warn" type="button" (click)="onDelete()">Delete</button>
+  <button color="warn" type="button" (click)="onNew()">New</button>
+</form>

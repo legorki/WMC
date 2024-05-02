@@ -1,0 +1,13 @@
+<div class="authors" id="authors">
+  <div
+    *ngFor="let author of authors"
+    class="author"
+    (click)="setValues(author.uuid, author.firstname, author.lastname)"
+  >
+    <h3 class="uuid">UUID: {{ author.uuid }}</h3>
+    <div class="info-container">
+      <p>Name: {{ author.firstname }} {{ author.lastname }}</p>
+    </div>
+  </div>
+</div>
+<app-author-detail [author]="selected"></app-author-detail>

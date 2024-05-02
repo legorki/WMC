@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <title>Projektdatenbank</title>
+
+    <script src="scripts/flavor.js" defer></script>
+    <script src="scripts/login.js" defer></script>
+    <script src="scripts/closeModal.js" defer></script>
+
+    <link rel="stylesheet" href="styles/modal.css">
+  </head>
+
+  <body class="window">
+
+    <div class="title-bar">
+      <div class="title-bar-text">
+        Projektdatenbank
+      </div>
+    </div>
+
+    <div class="window-body">
+      <menu role="tablist">
+        <li role="tab"><a href="/">Startseite</a></li>
+        <li role="tab" aria-selected="true"><a href="/login">Login</a></li>
+      </menu>
+
+      <div class="window" role="tabpanel">
+        <div class="window-body">
+          <h4>Projektdatenbank</h4>
+          <p>Bitte gib deinen Bentuzernamen und dein Passwort an, um die Projektdatenbank abrufen zu können.</p>
+          <form id="form">
+            <label for="username">Benutzername:</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password">
+            <br>
+            <input type="submit" id="submit" value="Absenden"/>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="modalSuccess" class="modal">
+      <div class="window modal-content">
+        <div class="title-bar">
+          <div class="title-bar-text">Einloggen Erfolgreich</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close" class="modal-close"></button>
+          </div>
+        </div>
+
+        <div class="window-body">
+          <p>Du bist erfolgreich eingeloggt!</p>
+          <p>Hier hast du deine Flag: <span id="flag"></span></p>
+          <button class="modal-close">Schließen</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modalFailure" class="modal">
+      <div class="window modal-content">
+        <div class="title-bar">
+          <div class="title-bar-text">Einloggen Fehlgeschlagen</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close" class="modal-close"></button>
+          </div>
+        </div>
+
+        <div class="window-body">
+          <p>Einloggen fehlgeschlagen, die angegebenen Zugangsdaten sind nicht korrekt!</p>
+          <button class="modal-close">Schließen</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modalDatabaseError" class="modal">
+      <div class="window modal-content">
+        <div class="title-bar">
+          <div class="title-bar-text">Fehler bei der Datenbankabfrage</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close" class="modal-close"></button>
+          </div>
+        </div>
+
+        <div class="window-body">
+          <p>Bei der Datenbankabfrage mit folgender SQL Abfrage ist ein Fehler aufgetreten.</p>
+          <code id="sqlQuery"></code>
+          <br><br>
+          <button class="modal-close">Schließen</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <hr>
+      <p>© 1998 Not actually copyright</p>
+    </footer>
+
+    <div class="status-bar">
+      <p class="status-bar-field">Drücke F1 für Hilfe</p>
+      <p class="status-bar-field">CPU Auslastung: <span id="usage">14%</span></p>
+      <p class="status-bar-field">Verfügbare CPU Kerne: <span id="cores">1</span></p>
+    </div>
+  </body>
+</html>

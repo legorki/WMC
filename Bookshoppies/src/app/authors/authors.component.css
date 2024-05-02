@@ -1,0 +1,32 @@
+.author-container {
+  margin-left: 40%;
+}
+
+.author-container h3 {
+  font-family: Verdana;
+  color: #333;
+}
+
+.author-container p {
+  font-family: Verdana;
+  color: #666;
+}
+
+
+.author-detail-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+
+.author-detail-container h2 {
+  font-family: Arial;
+  color: #333;
+}
+
+.author-detail-container p {
+  font-family: Arial;
+  color: #666;
+}

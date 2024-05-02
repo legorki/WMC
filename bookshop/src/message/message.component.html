@@ -1,0 +1,4 @@
+<div class="message-container" *ngFor="let message of messageService.getMessages()">
+  {{ message }}
+</div>
+<button class="clear-button" (click)="clearMessage()">Clear Messages</button>

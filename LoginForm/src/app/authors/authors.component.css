@@ -1,0 +1,29 @@
+.authors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.author {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.uuid {
+  margin: 0;
+  color: #333;
+}
+
+.info-container p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.app-author-detail {
+  margin-top: 20px; /* Adjust spacing as needed */
+}

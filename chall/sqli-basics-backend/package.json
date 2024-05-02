@@ -1,0 +1,22 @@
+{
+  "name": "sqli-basics-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}

@@ -1,0 +1,6 @@
+<div>
+  <button (click)="msgService.clearMessage()">Clear Messages</button>
+<li *ngFor="let x of msgService.stringArray">
+  <p>{{x}}</p>
+</li>
+</div>

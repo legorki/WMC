@@ -1,0 +1,46 @@
+.form {
+  margin-left: 75%;
+  margin-top: -10%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+  font-family: Verdana;
+  color: #333;
+}
+
+.form p {
+  font-family: Verdana;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form .buttons {
+  margin-top: 10px;
+}
+
+.form .buttons button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form .buttons button:hover {
+  background-color: orangered;
+}

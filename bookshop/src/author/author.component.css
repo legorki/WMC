@@ -1,0 +1,26 @@
+mat-list {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+mat-list-item {
+  background-color: #333333;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+mat-list-item:hover {
+  background-color: #454545;
+}
+
+mat-list-item:last-child {
+  border-bottom: none;
+}
